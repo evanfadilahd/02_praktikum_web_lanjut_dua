@@ -4,26 +4,11 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class PageController extends Controller
+class CUController extends Controller
 {
 
     public function index()
     {
-        echo"<br> Selamat Datang";
-    }
-
-    public function about()
-    {
-        echo"<br> Nama : Evan Fadhilah Dzulfikar";
-        echo"<br> NIM : 2141720167";
-    }
-
-    public function articles($id)
-    {
-        echo"<br> Halaman Artikel ".$id;
-    }
-
-    function contactus(){
         return redirect ('https://www.educastudio.com/contact-us');
     }
 
